@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira Code", monospace;
+}
+
+body {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #e2e8f0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #60a5fa;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 10px rgba(96, 165, 250, 0.5);
+}
+
+label {
+    font-size: 1.1rem;
+    color: #93c5fd;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 0.8rem;
+    border: 2px solid #334155;
+    border-radius: 10px;
+    background-color: #1e293b;
+    color: #f1f5f9;
+    font-size: 1rem;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 10px #3b82f6;
+    outline: none;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.8rem 2rem;
+    background: #2563eb;
+    border: none;
+    border-radius: 10px;
+    color: #f8fafc;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+#error {
+    margin-top: 1rem;
+    padding: 0.8rem;
+    background: #991b1b;
+    color: #fca5a5;
+    border: 1px solid #f87171;
+    border-radius: 8px;
+    max-width: 600px;
+    text-align: center;
+    font-weight: bold;
+    display: none;
+}
+
+#error:empty {
+    display: none;
+}
+
+#resultado {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-width: 600px;
+}
+
+ul {
+    margin-top: 1rem;
+    padding: 1rem;
+    list-style: none;
+    background: #1e293b;
+    border-radius: 10px;
+    border: 1px solid #334155;
+    max-width: 600px;
+}
+
+ul li {
+    padding: 0.4rem;
+    margin-bottom: 0.3rem;
+    background: #2563eb33;
+    border-radius: 6px;
+    color: #93c5fd;
+}
+.highlight {
+    background-color: rgb(127, 1, 186);
+    color: white;
+    font-weight: bold;
+    padding: 2px 4px;
+    border-radius: 4px;
+}

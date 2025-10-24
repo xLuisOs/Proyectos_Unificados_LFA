@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Herramienta REGEX</title>
+</head>
+<body>
+    <h1>Herramienta REGEX</h1>
+    <label for="regex">Ingrese la Expresión Regular:</label><br>
+    <input type="text" id="regex" placeholder="Ejemplo: \d+"><br><br>
+    <label for="texto">Ingrese el Texto:</label><br>
+    <textarea id="texto" rows="10" cols="50"></textarea><br><br>
+    <button id="procesar">Validar</button><br><br>
+    <div id="error" style="color: red;"></div><br>
+    <h3>Texto con Coincidencias:</h3>
+    <div id="resultado"></div><br>
+    <h3>Lista de Coincidencias:</h3>
+    <ul id="coincidencias"></ul>
+    <script src="main.js"></script>
+</body>
+</html>
